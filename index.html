@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayna ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Pontuação - Tayna ❤️</h1>
+        <p id="score-text">Pontuação: <span id="score">0</span> / 10</p>
+
+        <div class="input-area">
+            <input type="text" id="gesture" placeholder="Digite um gesto romântico">
+            <input type="text" id="description" placeholder="Descrição do gesto">
+            <button onclick="addGesture()">Adicionar Gesto</button>
+        </div>
+
+        <ul id="gesture-list"></ul>
+
+        <button class="add-point" onclick="addPoint()">Adicionar Ponto ❤️</button>
+
+        <div id="heart-animation">
+            <div class="heart"></div>
+            <p class="love-message">Falta pouco para namorarmos ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
