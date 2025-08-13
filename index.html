@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tayna ❤️</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tayna ❤️</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Sistema de Pontuação - Tayna ❤️</h1>
-        <p id="score-text">Pontuação: <span id="score">0</span> / 10</p>
+  <div class="container">
+    <h1>Tayna ❤️</h1>
 
-        <div class="input-area">
-            <input type="text" id="gesture" placeholder="Digite um gesto romântico">
-            <input type="text" id="description" placeholder="Descrição do gesto">
-            <button onclick="addGesture()">Adicionar Gesto</button>
-        </div>
+    <p id="score-text">Pontuação: <span id="score">0</span> / 10</p>
 
-        <ul id="gesture-list"></ul>
-
-        <button class="add-point" onclick="addPoint()">Adicionar Ponto ❤️</button>
-
-        <div id="heart-animation">
-            <div class="heart"></div>
-            <p class="love-message">Falta pouco para namorarmos ❤️</p>
-        </div>
+    <div class="input-area">
+      <input type="text" id="gesture" placeholder="Gesto romântico (ex: flores, bilhete fofo)"/>
+      <input type="text" id="description" placeholder="Descrição do gesto"/>
+      <button id="add-gesture-btn">Adicionar Gesto</button>
     </div>
 
-    <script src="script.js"></script>
+    <ul id="gesture-list"></ul>
+
+    <div class="actions">
+      <button class="add-point" id="add-point-btn">Adicionar Ponto ❤️</button>
+      <button class="remove-point" id="remove-point-btn">Remover Ponto 💔</button>
+    </div>
+  </div>
+
+  <!-- Tela de animação -->
+  <div id="animOverlay" class="anim-overlay hidden" aria-hidden="true">
+    <div id="animEmoji" class="big-emoji">❤️</div>
+    <p id="animText" class="anim-text"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
